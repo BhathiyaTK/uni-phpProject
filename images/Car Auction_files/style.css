@@ -1,0 +1,18 @@
+/* ========== Fonts =========== */
+@font-face{
+	font-family: navFont_1;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+/* =========== navbar ============ */
+nav ul li{
+	font-family: navFont_1;
+	padding: 0 10px;
+}
+nav ul li a{
+	color: #ea0e1c;
+	margin: 15px 0;
+}
+nav ul li a:hover{
+	color: #1e7aa8;
+}

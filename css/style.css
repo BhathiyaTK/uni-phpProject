@@ -1,0 +1,480 @@
+/* ======== Preloader ========== */
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/preloader.gif) center no-repeat #fff;
+}
+/* ========== Fonts =========== */
+@font-face{
+	font-family: navFont_1;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family: navFont_2;
+	src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face{
+	font-family: navFont_3;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: navFont_4;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+/* =========== navbar ============ */
+nav ul li{
+	font-family: navFont_1;
+	padding: 0 10px;
+}
+nav ul li a{
+	color: #062e6b;
+	transition: 0.2s;
+}
+nav ul li a:hover{
+	color: #ea0e1c;
+}
+.dropdown-menu{
+	width: 250px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 0;
+	margin: 0 15px;
+	font-family:navFont_3;
+	background: #eee;
+}
+.dropdown-menu a{
+	color: #555;
+	font-size: small;
+	padding: 10px 20px;
+}
+#sign-up-btn{
+	color: #ea0e1c;
+	font-size: 15px;
+	font-family: navFont_1;
+	padding: 5px 0 5px 25px;
+	margin-bottom: 20px;
+}
+.dropdown-divider{
+	border-top: 1px solid #ddd;
+}
+.navbar-nav .active{
+	color: #ea0e1c;
+}
+.right-align-navs{
+	margin-top: 8px;
+}
+.right-align-navs a{
+	font-size: normal;
+	padding: 5px 13px;
+}
+
+/* ======== Carousel section =========== */
+.carousel-inner{
+	height: 440px;
+	border-bottom: 5px solid #062e6b;
+}
+.carousel-btn{
+	width: 50px;
+	height: 50px;
+	background: #ea0e1c;
+	top: 45%;
+	opacity: 0;
+}
+.carousel:hover .carousel-btn{
+	opacity: 0.7;
+}
+#btn-prev{
+	left: 3.5%;
+}
+#btn-next{
+	right: 3.5%;
+}
+
+/* ======== Car category section ======== */
+.section-title{
+	text-align: center;
+}
+.section-title h2{
+	font-family: navFont_2;
+	color: #101010;
+}
+.divider{
+	border-top: 5px solid #ea0e1c;
+	width: 5%;
+	margin: 20px auto 50px auto;
+}
+.car-type-box{
+	width: 258px;
+	height: 258px;
+	margin-right: 20px;
+	display: inline-flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+}
+.car-type-box:last-child{
+	margin-right: 0px;
+}
+.car-image{
+	overflow: hidden;
+}
+.car-type-box img{
+	position: relative;
+	width: 100%;
+	transition: 0.3s;
+}
+.car-type-box:hover img{
+	transform: scale(1.1);
+}
+.car-topic{
+	position: relative;
+	top: -258px;
+	width: 258px;
+	padding: 117px 0;
+	text-align: center;
+	background: rgba(234, 14, 28,0.5);
+	transform: scale(0);
+	transition: 0.3s;
+}
+.car-topic a{
+	color: #062e6b;
+	font-size: 14px;
+	font-family: navFont_1;
+	background: #ffc107;
+	padding: 8px 30px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+.car-type-box:hover .car-topic{
+	transform: scale(1);
+}
+.car-topic a:hover{
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+
+/* ======== New trending cars section & Used trending cars section ======== */
+#trending-newcars-sec{
+	background: #eee;
+	padding: 40px 0;
+}
+.container-custom{
+	width: 95%;
+	margin: 0 auto;
+}
+.section-title h3{
+	text-align: left;
+	font-family: navFont_2;
+	color: #101010;
+	border-left: 5px solid #ea0e1c;
+	padding: 5px 0 5px 15px;
+}
+.card-title{
+	color: #ea0e1c;
+}
+.section-btn{
+	text-align: center;
+}
+.section-btn a{
+	color: #fff;
+	font-size: 15px;
+	font-family: navFont_1;
+	padding: 10px 40px;
+	background: #ea0e1c;
+	transition: 0.3s;
+}
+.section-btn a:hover{
+	text-decoration: none;
+	color: #101010;
+	background: #ffc107;
+}
+#trending-newcars-sec .card, #trending-usedcars-sec .card{
+	transition: 0.2s;
+}
+#trending-newcars-sec .card:hover{
+	box-shadow: 1px 1px 10px 10px #dedfe0;
+	transform: scale(1.02);
+}
+#trending-usedcars-sec .card:hover{
+	box-shadow: 1px 1px 10px 10px #eee;
+	transform: scale(1.02);
+}
+
+/* ================ New cars page styles =================== */
+
+#new-card-list, .card{
+	transition: 0.3s;
+	background: #f7f7f7;
+}
+#new-cars-list .card-title{
+	font-size: 21px;
+	font-family: navFont_1;
+}
+#new-cars-list .card-text{
+	font-size: 17px;
+	font-family: navFont_3;
+}
+#new-cars-list table{
+	width: 100%;
+	color: #888;
+	font-size: 15px;
+	font-family: navFont_3;
+}
+#new-cars-list .card:hover{
+	box-shadow: 1px 1px 10px 10px #eee;
+	transform: scale(1.01);
+	background: #fff;
+}
+
+/* ============ Contact page ================== */
+#contact-form{
+	padding-right: 30px;
+}
+#contact-form label{
+	font-family: navFont_1;
+	font-size: 15px;
+}
+#contact-form input[type=text], #contact-form input[type=email], #contact-form textarea{
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 14px;
+	padding: 8px 15px;
+	color: #777;
+	font-family: navFont_3;
+}
+#contact-form input[type=text]:focus, #contact-form input[type=email]:focus, #contact-form textarea:focus{
+	border: 2px solid #ffc107;
+}
+.form-submit-btn input[type=submit]{
+	color: #fff;
+	font-size: 15px;
+	font-family: navFont_4;
+	background: #ea0e1c;
+	border: 0;
+	border-radius: 0 25px 0 25px;
+	padding: 8px 25px;
+	transition: 0.2s;
+}
+.form-submit-btn input[type=submit]:hover{
+	background: #c40d19;
+}
+.contact-subtitles{
+	color: #ea0e1c;
+	font-family: navFont_1;
+	font-size: 1.2em;
+}
+.contact-para{
+	font-family: navFont_3;
+	font-size: 14px;
+	color: #777;
+	padding-left: 24px;
+}
+#contact-data-div{
+	padding: 15px 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* ======================== About page ======================== */
+#about-office-img-div{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.about-office-img-div-txt{
+	text-align: center;
+	margin-top: 15px;
+}
+.about-office-img-div-txt i{
+	color: #777;
+}
+.person-profile{
+	width: 100%;
+	text-align: center;
+}
+.person-profile .person-img{
+	overflow: hidden;
+	border-radius: 100%;
+	margin: 20px;
+}
+.person-profile .person-img img{
+	width: 100%;
+}
+.person-details{
+	margin-top: 10px;
+}
+.person-img img{
+	border-radius: 100%;
+	transition: 0.3s;
+}
+.person-profile:hover .person-img img{
+	transform: scale(1.1);
+}
+.person-details h4{
+	font-family: navFont_2;
+	color: #ea0e1c;
+}
+.person-details p{
+	font-family: navFont_1;
+	color: #bbb;
+	font-size: 19px;
+}
+
+/* ========================= Sign Up ============================= */
+.signup-form-div{
+	width: 60%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	padding: 20px 20px 0 20px;
+}
+.signup-form-div form{
+	margin-bottom: 0;
+}
+.signup-form-div form input[type=text], .signup-form-div form input[type=email], .signup-form-div form input[type=password]{
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 14px;
+	padding: 8px 15px;
+	color: #777;
+	font-family: navFont_3;
+}
+.signup-form-div form input[type=text]:focus, .signup-form-div form input[type=email]:focus, .signup-form-div form input[type=password]:focus{
+	border: 2px solid #ffc107;
+}
+.signup-form-div form label{
+	font-family: navFont_1;
+	font-size: 15px;
+}
+.form-signup-btn{
+	text-align: center;
+}
+.form-signup-btn input[type=submit]{
+	color: #fff;
+	font-size: 15px;
+	font-family: navFont_4;
+	background: #ea0e1c;
+	border: 0;
+	border-radius: 30px 30px 0 0;
+	padding: 8px 50px;
+	transition: 0.2s;
+}
+.form-signup-btn input[type=submit]:hover{
+	background: #c40d19;
+}
+.signup-section-title h2{
+	text-align: center;
+	font-family: navFont_2;
+	color: #101010;
+}
+
+/* ====================== Profile page ======================== */
+.profile-section-title h2{
+	text-align: center;
+	font-family: navFont_2;
+	color: #101010;
+}
+.profile-form-div{
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 7px;
+	padding: 20px 20px 0 20px;
+}
+.profile-form-div form{
+	margin-bottom: 0;
+}
+.profile-form-div form input[type=text], .profile-form-div form input[type=email], .profile-form-div form input[type=password]{
+	margin-bottom: 15px;
+	width: 100%;
+	font-size: 14px;
+	padding: 8px 15px;
+	color: #777;
+	font-family: navFont_3;
+}
+.profile-form-div form input[type=text]:focus, .profile-form-div form input[type=email]:focus, .profile-form-div form input[type=password]:focus{
+	border: 2px solid #ffc107;
+}
+.profile-form-div form label{
+	font-family: navFont_1;
+	font-size: 15px;
+}
+.profile-submit-btn{
+	text-align: center;
+}
+.profile-submit-btn input[type=submit]{
+	color: #fff;
+	font-size: 15px;
+	font-family: navFont_4;
+	background: #ea0e1c;
+	border: 0;
+	border-radius: 30px 30px 0 0;
+	padding: 8px 50px;
+	transition: 0.2s;
+}
+.profile-submit-btn input[type=submit]:hover{
+	background: #c40d19;
+}
+
+
+
+
+
+
+/* =============== Footer section =============== */
+#footer-sec{
+	padding: 50px 50px 20px 50px;
+	margin: 0;
+	background: #ffc107;
+}
+.copyright-div{
+	color: #ffc107;
+	font-size: 13px;
+	background: #ea0e1c;
+	text-align: center;
+	padding: 10px 0;
+}
+#footer-sec ul{
+	list-style: none;
+	padding: 0;
+}
+#footer-sec ul a{
+	color: #ea0e1c;
+	font-family: navFont_4;
+	font-size: 14px;
+	transition: 0.2s;
+}
+#footer-sec ul a:hover{
+	color: #062e6b;
+	text-decoration: none;
+	padding-left: 7px;
+}
+#subcribe-form input[type=email]{
+	width: 290px;
+	border:0;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #ea0e1c;
+	border-radius: 30px 0 0 30px;
+}
+#subcribe-form input[type=submit]{
+	position: relative;
+	left: -10px;
+	border:0;
+	border-radius: 0 30px 30px 0;
+	padding: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	background: #ea0e1c;
+}
+#mobile-app-links{
+	display: flex;
+}
+#mobile-app-links a{
+	width: 40%;
+	margin: 5px 15px 0 0;
+}
